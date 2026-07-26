@@ -1,6 +1,6 @@
 import 'bulma/css/bulma.css';
 import '@fortawesome/fontawesome-free/css/all.css';
-import { TodoFilter, TodoList } from './components';
+import { TodoFilter, TodoList, TodoModal } from './components';
 import { useAppDispatch } from './app/hooks/dispatchHook';
 import { useEffect } from 'react';
 import { getTodos } from './api';
@@ -32,6 +32,7 @@ export const App = () => {
           </div>
         </div>
       </div>
+      <TodoModal />
     </>
   );
 };
