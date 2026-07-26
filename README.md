@@ -41,18 +41,6 @@ company information, and a contact form (if present — adjust to match your pro
 ```
 
 4. Open `index.html` in your browser — for example, using the Live Server extension in VS Code.
-## 📁 Project Structure
-
-LandingPage/
-├── index.html
-├── scss/
-│ ├── main.scss
-│ └── ...
-├── css/
-│ └── main.css
-├── images/
-└── README.md
-
 
 ## 📌 Status
 
