@@ -3,8 +3,13 @@ import React from 'react';
 import { useAppDispatch, useAppSelector } from '../../app/hooks/dispatchHook';
 import { Todo } from '../../types/Todo';
 import { currentTodoSlice } from '../../features/currentTodo';
+import { Loader } from '../Loader';
 
-export const TodoList: React.FC = () => {
+type Props = {
+  loading: boolean;
+};
+
+export const TodoList: React.FC<Props> = ({ loading }) => {
   const todos = useAppSelector(state => state.todos);
 
   const { query, status } = useAppSelector(state => state.filter);
@@ -40,6 +45,7 @@ export const TodoList: React.FC = () => {
 
   return (
     <>
+      {loading && <Loader />}
       {resTodo.length === 0 && (
         <p className="notification is-warning">
           There are no todos matching current filter criteria
@@ -84,7 +90,7 @@ export const TodoList: React.FC = () => {
                 <td className="has-text-right is-vcentered">
                   <button data-cy="selectButton" className="button" type="button" onClick={() => dispatch(currentTodoSlice.actions.setCurrentTodo(todo))}>
                     <span className="icon">
-                      <i className="far fa-eye" />
+                      <i className={todo.id === currentTodo?.id ? 'far fa-eye-slash' : 'far fa-eye'} />
                     </span>
                   </button>
                 </td>
