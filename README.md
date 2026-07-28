@@ -1,4 +1,4 @@
-# Landing Page
+[# Landing Page
 
 > ❗❗ You will complete this task in the **Landing** topic.
 > Now just choose a design and do the parts from the videos.
@@ -22,3 +22,30 @@ Follow the instructions in this and next lessons to implement the page block by 
 # Tips & Hints
 - Check `background-image: url()` to be relative to the `main.scss`. So should start with `../images`.
 - If some points from the checklist are not relevant to your design, just skip it.
+](https://oskar274.github.io/layout_landing-page/ Demo link for test this site
+
+🚲 Bike Shop — Landing Page
+A simple one-page website for a bicycle shop. This project was built for learning purposes as a first practical layout assignment.
+
+📋 Description
+A landing page for a bike shop featuring responsive layout, a product catalog section, company information, and a contact form (if present — adjust to match your project).
+
+🛠️ Technologies
+HTML5 — semantic markup
+SCSS (Sass) — CSS preprocessor, modular structure
+CSS3 — flexbox/grid for responsive layout
+Possibly: BEM methodology for class naming
+🚀 Quick Start
+Clone the repository:
+   git clone https://github.com/Oskar274/LandingPage.git
+   cd LandingPage
+Install dependencies:
+   npm install
+Compile SCSS into CSS (if using a sass compiler):
+   npm run sass
+or, if watch mode is configured:
+
+   npm run watch
+Open index.html in your browser — for example, using the Live Server extension in VS Code.
+📌 Status
+Learning project / first layout assignment.)
