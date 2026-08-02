@@ -1,4 +1,4 @@
-# DEMO LINK - https://oskar274.github.io/layout_landing-page/
+## check DEMO LINK [here](https://oskar274.github.io/layout_landing-page/)
 
 # 🚲 Bike Shop — Landing Page
 
